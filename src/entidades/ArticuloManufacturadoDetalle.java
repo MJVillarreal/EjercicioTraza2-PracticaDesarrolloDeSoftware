@@ -28,4 +28,13 @@ public class ArticuloManufacturadoDetalle {
     public Set<ArticuloInsumo> getInsumos() {
         return new HashSet<>(insumos);
     }
+
+    @Override
+    public String toString() {
+        return "Detalle{" +
+                "id=" + id +
+                ", cantidad=" + cantidad +
+                ", insumos=" + insumos +
+                '}';
+    }
 }

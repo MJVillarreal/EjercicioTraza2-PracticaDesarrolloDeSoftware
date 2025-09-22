@@ -25,4 +25,13 @@ public abstract class Articulo {
     public void setPrecioVenta(Double precioVenta) { this.precioVenta = precioVenta; }
     public void setCategoria(Categoria categoria) { this.categoria = categoria; }
     public void setUnidadMedida(UnidadMedida unidadMedida) { this.unidadMedida = unidadMedida; }
+
+    @Override
+    public String toString() {
+        return "Articulo{" +
+                "id=" + id +
+                ", denominacion='" + denominacion + '\'' +
+                ", precioVenta=" + precioVenta +
+                '}';
+    }
 }

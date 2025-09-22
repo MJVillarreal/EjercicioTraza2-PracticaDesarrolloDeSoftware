@@ -24,4 +24,14 @@ public class ArticuloInsumo extends Articulo{
     public void setStockActual(Integer stockActual) { this.stockActual = stockActual; }
     public void setStockMaximo(Integer stockMaximo) { this.stockMaximo = stockMaximo; }
     public void setEsParaElaborar(Boolean esParaElaborar) { this.esParaElaborar = esParaElaborar; }
+
+    @Override
+    public String toString() {
+        return "ArticuloInsumo{" +
+                "id=" + getId() +
+                ", denominacion='" + getDenominacion() + '\'' +
+                ", precioVenta=" + getPrecioVenta() +
+                ", stockActual=" + stockActual +
+                '}';
+    }
 }

@@ -50,4 +50,14 @@ public class ArticuloManufacturado extends Articulo {
     public Set<Imagen> getImagenes() {
         return new HashSet<>(imagenes);
     }
+
+    @Override
+    public String toString() {
+        return "ArticuloManufacturado{" +
+                "id=" + getId() +
+                ", denominacion='" + getDenominacion() + '\'' +
+                ", precioVenta=" + getPrecioVenta() +
+                ", detalles=" + detalles +
+                '}';
+    }
 }
